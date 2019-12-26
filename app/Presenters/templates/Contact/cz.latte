@@ -1,0 +1,55 @@
+{block content}
+<div class="content" style="margin-top: 3rem;">
+    <h2 n:block=title class="content-head is-center">Kontakt</h2>
+
+    <div class="pure-g">
+        <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+            {if !$submitted}
+                {form contactForm class=>"pure-form pure-form-stacked"}
+                    <fieldset>
+                        <label>Váš e-mail:</label>
+                        {input email placeholder=>"vas@email.cz"}
+                        <small id="contact-email-help" class="form-text text-muted">Nikdy nebudeme s nikým sdílet váš email.</small>
+                        <label >Vaše jméno:</label>
+                        {input name placeholder=>"Jana Nováková"}
+                        <label>Zpráva:</label>
+                        {input text style=>"width: 100%;", placeholder=>"Dobrý den, děkuji za skvělé pivo!"}
+                        <button type="submit" n:name="submit" class="pure-button">Odeslat</button>
+                    </fieldset>
+                {/form}
+            {else}
+                <p class="text-muted" style="text-align: center;">Děkujeme že jste nás kontaktovali, bude během pár okamžiků odeslána!</p>
+            {/if}
+        </div>
+
+        <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+            <h4>Kontaktujte nás</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </p>
+
+            <h4>Více informací</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+
+            <address>
+                Skynette s.r.o<br>
+                Pivovarská 1<br>
+                Praha<br>
+                110 00
+            </address>
+            Telefon (+420) 123 456 789
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

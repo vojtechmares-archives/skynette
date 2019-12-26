@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Nextras\\Routing\\' => array($vendorDir . '/nextras/static-router/src'),
+    'Nextras\\MailPanel\\' => array($vendorDir . '/nextras/mail-panel/src'),
 );

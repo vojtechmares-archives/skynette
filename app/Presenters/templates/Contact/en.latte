@@ -1,0 +1,53 @@
+{block content}
+    <div class="content" style="margin-top: 3rem;">
+        <h2 n:block=title class="content-head is-center">Contact</h2>
+
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                {if !$submitted}
+                    {form contactForm class=>"pure-form pure-form-stacked"}
+                        <fieldset>
+                            <label>Your e-mail:</label>
+                            {input email placeholder=>"email@example.com"}
+                            <small id="contact-email-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <label >Your name:</label>
+                            {input name placeholder=>"Jane Doe"}
+                            <label>Message:</label>
+                            {input text style=>"width: 100%;", placeholder=>"Hello, thank you for the great beer guys!"}
+                            <button type="submit" n:name="submit" class="pure-button">Send</button>
+                        </fieldset>
+                    {/form}
+                {else}
+                    <p class="text-muted" style="text-align: center;">Thank you for contacting us, your message will be sent shortly!</p>
+                {/if}
+            </div>
+
+            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                <h4>Contact Us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+
+                <h4>More Information</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+
+                    <address>
+                        Skynette s.r.o<br>
+                        Pivovarská 1<br>
+                        Praha<br>
+                        110 00
+                    </address>
+                    Phone (+420) 123 456 789
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+

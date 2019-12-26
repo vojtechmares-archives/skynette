@@ -4,12 +4,32 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
+class ComposerStaticInit400374194d235c87a7cbe354e6551bdb
 {
     public static $files = array (
         '59af96974553a1fc6407327354b6f47e' => __DIR__ . '/..' . '/nette/di/src/compatibility.php',
         '19a7e2c3b1d506dcdc1b60aab8e102e4' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/shortcuts.php',
+        'afdda9f94b76f77a7518e02eee753cc9' => __DIR__ . '/..' . '/nette/mail/src/compatibility.php',
         'e7a6fd2e7a869bb207158e9416bdd9b0' => __DIR__ . '/..' . '/nette/application/src/compatibility.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'N' => 
+        array (
+            'Nextras\\Routing\\' => 16,
+            'Nextras\\MailPanel\\' => 18,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Nextras\\Routing\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nextras/static-router/src',
+        ),
+        'Nextras\\MailPanel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nextras/mail-panel/src',
+        ),
     );
 
     public static $classMap = array (
@@ -104,8 +124,6 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\Bridges\\CacheDI\\CacheExtension' => __DIR__ . '/..' . '/nette/caching/src/Bridges/CacheDI/CacheExtension.php',
         'Nette\\Bridges\\CacheLatte\\CacheMacro' => __DIR__ . '/..' . '/nette/caching/src/Bridges/CacheLatte/CacheMacro.php',
         'Nette\\Bridges\\DITracy\\ContainerPanel' => __DIR__ . '/..' . '/nette/di/src/Bridges/DITracy/ContainerPanel.php',
-        'Nette\\Bridges\\DatabaseDI\\DatabaseExtension' => __DIR__ . '/..' . '/nette/database/src/Bridges/DatabaseDI/DatabaseExtension.php',
-        'Nette\\Bridges\\DatabaseTracy\\ConnectionPanel' => __DIR__ . '/..' . '/nette/database/src/Bridges/DatabaseTracy/ConnectionPanel.php',
         'Nette\\Bridges\\FormsDI\\FormsExtension' => __DIR__ . '/..' . '/nette/forms/src/Bridges/FormsDI/FormsExtension.php',
         'Nette\\Bridges\\FormsLatte\\FormMacros' => __DIR__ . '/..' . '/nette/forms/src/Bridges/FormsLatte/FormMacros.php',
         'Nette\\Bridges\\FormsLatte\\Runtime' => __DIR__ . '/..' . '/nette/forms/src/Bridges/FormsLatte/Runtime.php',
@@ -113,8 +131,6 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\Bridges\\HttpDI\\SessionExtension' => __DIR__ . '/..' . '/nette/http/src/Bridges/HttpDI/SessionExtension.php',
         'Nette\\Bridges\\HttpTracy\\SessionPanel' => __DIR__ . '/..' . '/nette/http/src/Bridges/HttpTracy/SessionPanel.php',
         'Nette\\Bridges\\MailDI\\MailExtension' => __DIR__ . '/..' . '/nette/mail/src/Bridges/MailDI/MailExtension.php',
-        'Nette\\Bridges\\SecurityDI\\SecurityExtension' => __DIR__ . '/..' . '/nette/security/src/Bridges/SecurityDI/SecurityExtension.php',
-        'Nette\\Bridges\\SecurityTracy\\UserPanel' => __DIR__ . '/..' . '/nette/security/src/Bridges/SecurityTracy/UserPanel.php',
         'Nette\\Caching\\Cache' => __DIR__ . '/..' . '/nette/caching/src/Caching/Cache.php',
         'Nette\\Caching\\IBulkReader' => __DIR__ . '/..' . '/nette/caching/src/Caching/IBulkReader.php',
         'Nette\\Caching\\IStorage' => __DIR__ . '/..' . '/nette/caching/src/Caching/IStorage.php',
@@ -172,43 +188,6 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\DI\\PhpGenerator' => __DIR__ . '/..' . '/nette/di/src/DI/PhpGenerator.php',
         'Nette\\DI\\Resolver' => __DIR__ . '/..' . '/nette/di/src/DI/Resolver.php',
         'Nette\\DI\\ServiceCreationException' => __DIR__ . '/..' . '/nette/di/src/DI/exceptions.php',
-        'Nette\\Database\\Connection' => __DIR__ . '/..' . '/nette/database/src/Database/Connection.php',
-        'Nette\\Database\\ConnectionException' => __DIR__ . '/..' . '/nette/database/src/Database/exceptions.php',
-        'Nette\\Database\\ConstraintViolationException' => __DIR__ . '/..' . '/nette/database/src/Database/exceptions.php',
-        'Nette\\Database\\Context' => __DIR__ . '/..' . '/nette/database/src/Database/Context.php',
-        'Nette\\Database\\Conventions\\AmbiguousReferenceKeyException' => __DIR__ . '/..' . '/nette/database/src/Database/Conventions/AmbiguousReferenceKeyException.php',
-        'Nette\\Database\\Conventions\\DiscoveredConventions' => __DIR__ . '/..' . '/nette/database/src/Database/Conventions/DiscoveredConventions.php',
-        'Nette\\Database\\Conventions\\StaticConventions' => __DIR__ . '/..' . '/nette/database/src/Database/Conventions/StaticConventions.php',
-        'Nette\\Database\\DriverException' => __DIR__ . '/..' . '/nette/database/src/Database/DriverException.php',
-        'Nette\\Database\\Drivers\\MsSqlDriver' => __DIR__ . '/..' . '/nette/database/src/Database/Drivers/MsSqlDriver.php',
-        'Nette\\Database\\Drivers\\MySqlDriver' => __DIR__ . '/..' . '/nette/database/src/Database/Drivers/MySqlDriver.php',
-        'Nette\\Database\\Drivers\\OciDriver' => __DIR__ . '/..' . '/nette/database/src/Database/Drivers/OciDriver.php',
-        'Nette\\Database\\Drivers\\OdbcDriver' => __DIR__ . '/..' . '/nette/database/src/Database/Drivers/OdbcDriver.php',
-        'Nette\\Database\\Drivers\\PgSqlDriver' => __DIR__ . '/..' . '/nette/database/src/Database/Drivers/PgSqlDriver.php',
-        'Nette\\Database\\Drivers\\SqliteDriver' => __DIR__ . '/..' . '/nette/database/src/Database/Drivers/SqliteDriver.php',
-        'Nette\\Database\\Drivers\\SqlsrvDriver' => __DIR__ . '/..' . '/nette/database/src/Database/Drivers/SqlsrvDriver.php',
-        'Nette\\Database\\ForeignKeyConstraintViolationException' => __DIR__ . '/..' . '/nette/database/src/Database/exceptions.php',
-        'Nette\\Database\\Helpers' => __DIR__ . '/..' . '/nette/database/src/Database/Helpers.php',
-        'Nette\\Database\\IConventions' => __DIR__ . '/..' . '/nette/database/src/Database/IConventions.php',
-        'Nette\\Database\\IRow' => __DIR__ . '/..' . '/nette/database/src/Database/IRow.php',
-        'Nette\\Database\\IRowContainer' => __DIR__ . '/..' . '/nette/database/src/Database/IRowContainer.php',
-        'Nette\\Database\\IStructure' => __DIR__ . '/..' . '/nette/database/src/Database/IStructure.php',
-        'Nette\\Database\\ISupplementalDriver' => __DIR__ . '/..' . '/nette/database/src/Database/ISupplementalDriver.php',
-        'Nette\\Database\\NotNullConstraintViolationException' => __DIR__ . '/..' . '/nette/database/src/Database/exceptions.php',
-        'Nette\\Database\\ResultSet' => __DIR__ . '/..' . '/nette/database/src/Database/ResultSet.php',
-        'Nette\\Database\\Row' => __DIR__ . '/..' . '/nette/database/src/Database/Row.php',
-        'Nette\\Database\\SqlLiteral' => __DIR__ . '/..' . '/nette/database/src/Database/SqlLiteral.php',
-        'Nette\\Database\\SqlPreprocessor' => __DIR__ . '/..' . '/nette/database/src/Database/SqlPreprocessor.php',
-        'Nette\\Database\\Structure' => __DIR__ . '/..' . '/nette/database/src/Database/Structure.php',
-        'Nette\\Database\\Table\\ActiveRow' => __DIR__ . '/..' . '/nette/database/src/Database/Table/ActiveRow.php',
-        'Nette\\Database\\Table\\ColumnAccessCache' => __DIR__ . '/..' . '/nette/database/src/Database/Table/ColumnAccessCache.php',
-        'Nette\\Database\\Table\\GroupedSelection' => __DIR__ . '/..' . '/nette/database/src/Database/Table/GroupedSelection.php',
-        'Nette\\Database\\Table\\IRow' => __DIR__ . '/..' . '/nette/database/src/Database/Table/IRow.php',
-        'Nette\\Database\\Table\\IRowContainer' => __DIR__ . '/..' . '/nette/database/src/Database/Table/IRowContainer.php',
-        'Nette\\Database\\Table\\ReferenceCache' => __DIR__ . '/..' . '/nette/database/src/Database/Table/ReferenceCache.php',
-        'Nette\\Database\\Table\\Selection' => __DIR__ . '/..' . '/nette/database/src/Database/Table/Selection.php',
-        'Nette\\Database\\Table\\SqlBuilder' => __DIR__ . '/..' . '/nette/database/src/Database/Table/SqlBuilder.php',
-        'Nette\\Database\\UniqueConstraintViolationException' => __DIR__ . '/..' . '/nette/database/src/Database/exceptions.php',
         'Nette\\DeprecatedException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\DirectoryNotFoundException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\FileNotFoundException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
@@ -261,13 +240,16 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\Iterators\\Mapper' => __DIR__ . '/..' . '/nette/utils/src/Iterators/Mapper.php',
         'Nette\\Loaders\\RobotLoader' => __DIR__ . '/..' . '/nette/robot-loader/src/RobotLoader/RobotLoader.php',
         'Nette\\Localization\\ITranslator' => __DIR__ . '/..' . '/nette/utils/src/Utils/ITranslator.php',
+        'Nette\\Mail\\DkimSigner' => __DIR__ . '/..' . '/nette/mail/src/Mail/DkimSigner.php',
         'Nette\\Mail\\FallbackMailer' => __DIR__ . '/..' . '/nette/mail/src/Mail/FallbackMailer.php',
         'Nette\\Mail\\FallbackMailerException' => __DIR__ . '/..' . '/nette/mail/src/Mail/exceptions.php',
-        'Nette\\Mail\\IMailer' => __DIR__ . '/..' . '/nette/mail/src/Mail/IMailer.php',
+        'Nette\\Mail\\Mailer' => __DIR__ . '/..' . '/nette/mail/src/Mail/Mailer.php',
         'Nette\\Mail\\Message' => __DIR__ . '/..' . '/nette/mail/src/Mail/Message.php',
         'Nette\\Mail\\MimePart' => __DIR__ . '/..' . '/nette/mail/src/Mail/MimePart.php',
         'Nette\\Mail\\SendException' => __DIR__ . '/..' . '/nette/mail/src/Mail/exceptions.php',
         'Nette\\Mail\\SendmailMailer' => __DIR__ . '/..' . '/nette/mail/src/Mail/SendmailMailer.php',
+        'Nette\\Mail\\SignException' => __DIR__ . '/..' . '/nette/mail/src/Mail/exceptions.php',
+        'Nette\\Mail\\Signer' => __DIR__ . '/..' . '/nette/mail/src/Mail/Signer.php',
         'Nette\\Mail\\SmtpException' => __DIR__ . '/..' . '/nette/mail/src/Mail/exceptions.php',
         'Nette\\Mail\\SmtpMailer' => __DIR__ . '/..' . '/nette/mail/src/Mail/SmtpMailer.php',
         'Nette\\MemberAccessException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
@@ -312,18 +294,6 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\Schema\\Processor' => __DIR__ . '/..' . '/nette/schema/src/Schema/Processor.php',
         'Nette\\Schema\\Schema' => __DIR__ . '/..' . '/nette/schema/src/Schema/Schema.php',
         'Nette\\Schema\\ValidationException' => __DIR__ . '/..' . '/nette/schema/src/Schema/ValidationException.php',
-        'Nette\\Security\\AuthenticationException' => __DIR__ . '/..' . '/nette/security/src/Security/AuthenticationException.php',
-        'Nette\\Security\\IAuthenticator' => __DIR__ . '/..' . '/nette/security/src/Security/IAuthenticator.php',
-        'Nette\\Security\\IAuthorizator' => __DIR__ . '/..' . '/nette/security/src/Security/IAuthorizator.php',
-        'Nette\\Security\\IIdentity' => __DIR__ . '/..' . '/nette/security/src/Security/IIdentity.php',
-        'Nette\\Security\\IResource' => __DIR__ . '/..' . '/nette/security/src/Security/IResource.php',
-        'Nette\\Security\\IRole' => __DIR__ . '/..' . '/nette/security/src/Security/IRole.php',
-        'Nette\\Security\\IUserStorage' => __DIR__ . '/..' . '/nette/security/src/Security/IUserStorage.php',
-        'Nette\\Security\\Identity' => __DIR__ . '/..' . '/nette/security/src/Security/Identity.php',
-        'Nette\\Security\\Passwords' => __DIR__ . '/..' . '/nette/security/src/Security/Passwords.php',
-        'Nette\\Security\\Permission' => __DIR__ . '/..' . '/nette/security/src/Security/Permission.php',
-        'Nette\\Security\\SimpleAuthenticator' => __DIR__ . '/..' . '/nette/security/src/Security/SimpleAuthenticator.php',
-        'Nette\\Security\\User' => __DIR__ . '/..' . '/nette/security/src/Security/User.php',
         'Nette\\SmartObject' => __DIR__ . '/..' . '/nette/utils/src/Utils/SmartObject.php',
         'Nette\\StaticClass' => __DIR__ . '/..' . '/nette/utils/src/Utils/StaticClass.php',
         'Nette\\UnexpectedValueException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
@@ -400,7 +370,9 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit091ed5d24b4127ffc48411e34be2086f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit400374194d235c87a7cbe354e6551bdb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit400374194d235c87a7cbe354e6551bdb::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit400374194d235c87a7cbe354e6551bdb::$classMap;
 
         }, null, ClassLoader::class);
     }

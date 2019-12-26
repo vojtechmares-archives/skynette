@@ -10,6 +10,13 @@ application:
 session:
 	expiration: 14 days
 
+tracy:
+	bar:
+		- Nextras\MailPanel\MailPanel(%tempDir%/mail-panel-latte)
 
 services:
 	router: App\Router\RouterFactory::createRouter
+	nette.mailer:
+	    class: Nette\Mail\IMailer
+	    factory: Nextras\MailPanel\FileMailer(%tempDir%/mail-panel-mails)
+	- App\Presenters\Controls\Form\IContactFormFactory
